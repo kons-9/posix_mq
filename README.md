@@ -1,1 +1,1 @@
-# posix_mq
+# posix message queue

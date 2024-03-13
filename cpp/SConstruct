@@ -1,0 +1,9 @@
+VariantDir("build", "src", duplicate = 0)
+CacheDir("./.cache")
+
+env = Environment(CPPPATH = ["."])
+
+SharedLibrary("build/lib/foo", "lib/lib.cpp")
+
+Program("build/sample", "build/sample.cpp", LIBS = ["foo"], LIBPATH = ["./build/lib"])
+
